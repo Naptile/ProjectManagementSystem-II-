@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import Lightfall from '../components/Lightfall';
-import About from "@/components/About";
+import About from "../components/About";
+import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 export default function LandingPage() {
   return(
     <div className="relative  min-h-[50%] h-50% overflow-hidden">
@@ -44,12 +46,19 @@ export default function LandingPage() {
           Manage your projects and tasks efficiently.
         </p>
       </div>
-     
-    </main>
-    
-  </div> 
 
+      <About/> 
+      <Features/>
+    </main> 
+     
+     <Footer/>
+  </div> 
+   
 </div>
+
+
+
+ 
   )
 }
 

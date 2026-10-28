@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Navbar(){
     return(
        <nav className=" items-center m-6 mx-auto w-[90%] md:w-[80%] lg:w-[70%]">
@@ -11,7 +12,10 @@ export default function Navbar(){
             <div className="flex gap-4 items-center text-white font-medium">
                 <p className="text-lg hover:text-blue-500 transition-colors">About</p>
                 <p className="text-lg hover:text-blue-500 transition-colors">Features</p>
-                <button className="border py-2 px-4 text-lg rounded-lg hover:bg-white hover:text-black transition-colors shadow-lg bg-white/20 whitespace-nowrap">Get Started</button>
+
+                <Link to={"/login"}>
+                 <button className="border py-2 px-4 text-lg rounded-lg hover:bg-white hover:text-black transition-colors shadow-lg bg-white/20 whitespace-nowrap">Get Started</button>
+                </Link>
             </div>
         </div>
        </nav> 
