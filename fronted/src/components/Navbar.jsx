@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
-export default function Navbar(){
+export default function Navbar({name}){
     return(
        <nav className=" items-center m-6 mx-auto w-[90%] md:w-[80%] lg:w-[70%]">
         <div className="w-full gap-2 flex p-2 justify-between items-center  rounded-2xl  shadow-lg bg-white/10 ">
             
             <div className="flex items-center gap-2  ">
                 <div className="flex text-white font-bold items-center text-lg h-10 w-15 bg-gradient-to-r from-blue-400 to-purple-500 p-3 rounded-lg shadow-xl">PMS</div>
-                <h1 className="hidden md:flex text-xl font-serif text-white font-bold whitespace-nowrap ">Project Management System </h1>
+                <h1 className="hidden md:flex text-xl font-serif bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent font-bold whitespace-nowrap ">{name}</h1>
             </div>
             
             <div className="flex gap-4 items-center text-white font-medium">

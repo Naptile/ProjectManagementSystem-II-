@@ -1,5 +1,5 @@
 const errorMiddleware = async(err,req,res,next)=>{
-    console.error(error.Stack);
+    console.error(err.Stack);
     if(err.message==="ValidationError"){
         return res.status(400).json({
             message:"Validation failed"

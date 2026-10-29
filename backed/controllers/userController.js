@@ -34,6 +34,7 @@ exports.registerUser = async(req,res,next) =>{
 
 
 exports.loginUser = async(req,res,next)=>{
+    
     const {email,password} = req.body;
     try {
         const userExists = await User.findOne({email});

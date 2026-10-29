@@ -34,7 +34,7 @@ export default function LandingPage() {
   {/* FOREGROUND */}
 
   <div className="relative z-10">
-    <Navbar/>  
+    <Navbar name={"Task Management System"}/>  
 
     <main className="flex flex-col  items-center justify-center">
       <div className=" flex flex-col gap-6 p-7 text-center text-white bg-white/10 rounded-xl h-70 ">

@@ -20,9 +20,9 @@ export default function Features(){
          
     ]
     return(
-        <section className=" w-full   mb-5  p-8 ">
-            <div className="flex flex-col md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full bg-blue-200  m-auto  items-center max-w-7xl gap-3 p-5">
-                <h1 className="sm:col-span-2 lg:col-span-3 text-center text-3xl text-blue-500 font-serif">Features</h1>
+        <section className=" w-full bg-slate-300/50 opacity-75   mb-5  p-8 ">
+            <div className="flex flex-col md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full  m-auto  items-center max-w-7xl gap-3 p-5">
+                <h1 className="sm:col-span-2 lg:col-span-3 font-roboto text-center text-3xl text-blue-400 font-serif">Features</h1>
                 {
                     features.map((feature,index)=>(
                         <div className=" bg-slate-100 p-1 shadow-lg flex flex-col  w-full h-full rounded-xl ">
